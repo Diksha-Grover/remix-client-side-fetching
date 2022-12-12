@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../app/routes/__app/sales/invoices/index.tsx"],
+  "sourcesContent": ["import type { LoaderArgs } from \"@remix-run/node\";\r\nimport { json, redirect } from \"@remix-run/node\";\r\nimport { getFirstInvoice } from \"~/models/invoice.server\";\r\nimport { requireUser } from \"~/session.server\";\r\n\r\nexport async function loader({ request }: LoaderArgs) {\r\n  await requireUser(request);\r\n  const firstInvoice = await getFirstInvoice();\r\n  if (!firstInvoice) {\r\n    return json({});\r\n  }\r\n  return redirect(`/sales/invoices/${firstInvoice.id}`);\r\n}\r\n\r\nexport default function InvoiceIndex() {\r\n  return <div className=\"p-10\">You don't have any invoices \uD83D\uDE2D</div>;\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;AAEA,qBAAgC;AAChC,qBAA4B;AAH5B;AAce,SAAR,eAAgC;AACrC,SAAO,mDAAC;AAAA,IAAI,WAAU;AAAA,IAAO;AAAA,KAAtB;AAAA;AAAA;AAAA;AAAA,SAAoD;AAC7D;",
+  "names": []
+}

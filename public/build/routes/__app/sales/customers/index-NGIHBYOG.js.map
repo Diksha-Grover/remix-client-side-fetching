@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../app/routes/__app/sales/customers/index.tsx"],
+  "sourcesContent": ["import type { LoaderArgs } from \"@remix-run/node\";\r\nimport { json, redirect } from \"@remix-run/node\";\r\nimport { getFirstCustomer } from \"~/models/customer.server\";\r\nimport { requireUser } from \"~/session.server\";\r\n\r\nexport async function loader({ request }: LoaderArgs) {\r\n  await requireUser(request);\r\n  const firstCustomer = await getFirstCustomer();\r\n  if (!firstCustomer) {\r\n    return json({});\r\n  }\r\n  return redirect(`/sales/customers/${firstCustomer.id}`);\r\n}\r\n\r\nexport default function InvoiceIndex() {\r\n  return <div className=\"p-10\">You don't have any customers \uD83D\uDE2D</div>;\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;AAEA,sBAAiC;AACjC,qBAA4B;AAH5B;AAce,SAAR,eAAgC;AACrC,SAAO,mDAAC;AAAA,IAAI,WAAU;AAAA,IAAO;AAAA,KAAtB;AAAA;AAAA;AAAA;AAAA,SAAqD;AAC9D;",
+  "names": []
+}

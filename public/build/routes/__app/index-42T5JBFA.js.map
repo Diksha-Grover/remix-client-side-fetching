@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/__app/index.tsx"],
+  "sourcesContent": ["import { Link } from \"@remix-run/react\";\r\nimport type { LoaderArgs } from \"@remix-run/node\";\r\nimport { redirect } from \"@remix-run/node\";\r\nimport { requireUser } from \"~/session.server\";\r\n\r\nexport async function loader({ request }: LoaderArgs) {\r\n  await requireUser(request);\r\n  return redirect(\"/sales/invoices\");\r\n}\r\n\r\nexport default function IndexRoute() {\r\n  return (\r\n    <div>\r\n      Go to the{\" \"}\r\n      <Link className=\"text-blue-600 underline\" to=\"sales\">\r\n        sales\r\n      </Link>{\" \"}\r\n      page...\r\n    </div>\r\n  );\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;AAGA,qBAA4B;AAH5B;AAUe,SAAR,aAA8B;AACnC,SACE,mDAAC;AAAA,IAAI;AAAA;AAAA,MACO;AAAA,MACV,mDAAC;AAAA,QAAK,WAAU;AAAA,QAA0B,IAAG;AAAA,QAAQ;AAAA,SAArD;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,MAAQ;AAAA,MAAI;AAAA;AAAA,KAJd;AAAA;AAAA;AAAA;AAAA,SAMA;AAEJ;",
+  "names": []
+}

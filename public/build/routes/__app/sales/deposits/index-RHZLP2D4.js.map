@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../app/routes/__app/sales/deposits/index.tsx"],
+  "sourcesContent": ["export default function DepositsIndexRoute() {\r\n  return null;\r\n}\r\n"],
+  "mappings": ";;;AAAe,SAAR,qBAAsC;AAC3C,SAAO;AACT;",
+  "names": []
+}

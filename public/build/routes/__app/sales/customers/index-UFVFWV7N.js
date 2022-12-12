@@ -1,0 +1,1 @@
+import{a as i}from"/build/_shared/chunk-XLZYFGVF.js";import{a as t}from"/build/_shared/chunk-FPOB764B.js";import{b as e}from"/build/_shared/chunk-XBDI323W.js";import{c as r}from"/build/_shared/chunk-Q3IECNXJ.js";var s=r(i()),n=r(t()),a=r(e());function o(){return(0,a.jsx)("div",{className:"p-10",children:"You don't have any customers \u{1F62D}"})}export{o as default};

@@ -1,0 +1,1 @@
+import{a as t}from"/build/_shared/chunk-FPOB764B.js";import{b as r}from"/build/_shared/chunk-XBDI323W.js";import{c as o}from"/build/_shared/chunk-Q3IECNXJ.js";var n=o(t()),a=o(r());function e(){return(0,a.jsx)("div",{children:"Hope you don't have a lot of these..."})}export{e as default};

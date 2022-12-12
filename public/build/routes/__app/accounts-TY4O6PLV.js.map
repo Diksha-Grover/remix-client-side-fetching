@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/__app/accounts.tsx"],
+  "sourcesContent": ["import type { LoaderArgs } from \"@remix-run/node\";\r\nimport { json } from \"@remix-run/node\";\r\nimport { requireUser } from \"~/session.server\";\r\n\r\nexport async function loader({ request }: LoaderArgs) {\r\n  await requireUser(request);\r\n  return json({});\r\n}\r\n\r\nexport default function AccountsRoute() {\r\n  return <div>Hope you have tons of accounts I guess.</div>;\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;AAEA,qBAA4B;AAF5B;AASe,SAAR,gBAAiC;AACtC,SAAO,mDAAC;AAAA,IAAI;AAAA,KAAL;AAAA;AAAA;AAAA;AAAA,SAA4C;AACrD;",
+  "names": []
+}

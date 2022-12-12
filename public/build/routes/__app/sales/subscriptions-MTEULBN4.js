@@ -1,0 +1,1 @@
+import{a as t}from"/build/_shared/chunk-FPOB764B.js";import{b as o}from"/build/_shared/chunk-XBDI323W.js";import{c as r}from"/build/_shared/chunk-Q3IECNXJ.js";var i=r(t()),n=r(o());function e(){return(0,n.jsx)("div",{children:"Woo. Subs. Money."})}export{e as default};

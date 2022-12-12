@@ -1,0 +1,1 @@
+import{a as t}from"/build/_shared/chunk-FPOB764B.js";import{b as r}from"/build/_shared/chunk-XBDI323W.js";import{c as o}from"/build/_shared/chunk-Q3IECNXJ.js";var n=o(t()),u=o(r());function e(){return(0,u.jsx)("div",{children:"Hope you have tons of accounts I guess."})}export{e as default};

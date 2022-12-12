@@ -1,0 +1,1 @@
+import{a as t}from"/build/_shared/chunk-FPOB764B.js";import{b as o}from"/build/_shared/chunk-XBDI323W.js";import{c as r}from"/build/_shared/chunk-Q3IECNXJ.js";var a=r(t()),d=r(o());function e(){return(0,d.jsx)("div",{children:"Look at all these graphs!"})}export{e as default};
